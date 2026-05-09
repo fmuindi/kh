@@ -592,7 +592,18 @@
   }
   .card:hover .card-ico { transform: scale(1.1) rotate(-4deg); }
   .card-title { font-family: var(--f-display); font-size: 16.5px; font-weight: 800; color: var(--white); margin-bottom: 9px; }
-  .card-body  { font-size: 13px; color: var(--text-lt); line-height: 1.65; }
+  .card-body  { font-size: 13px; color: var(--text-lt); line-height: 1.65; margin-bottom: 12px; }
+  .card-link {
+    display: inline-block;
+    font-family: var(--f-ui);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--purple);
+    text-decoration: none;
+    transition: color .2s var(--ease);
+    cursor: pointer;
+  }
+  .card-link:hover { color: var(--purple); text-decoration: underline; }
 
   /* ============================================================
      SCROLLING GALLERY
@@ -1228,6 +1239,7 @@
         <div class="card-ico" style="background:rgba(124,58,237,.12);color:var(--purple);"><i class="fas fa-heart"></i></div>
         <div class="card-title">Loving Leaders</div>
         <p class="card-body">Our trained volunteers and staff are passionate about helping every child grow in confidence and in God's love.</p>
+        <a href="#" class="card-link">Meet Our Team</a>
       </div>
     </div>
   </div>
